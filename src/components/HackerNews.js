@@ -4,17 +4,9 @@ import React, { Component } from 'react';
 const API_BASE_URL = 'https://hn.algolia.com/api/v1/search?query=';
 const DEFAULT_QUERY = 'd3';
 
-// make a class-based component
+// class-based component
 class HackerNews extends Component {
-  // constructor(props) {
-  //   super(props);
-
-  //   // define local state
-  //   this.state = {
-  //     hits: [], // store initial state as empty array to be filled with data
-  //   };
-  // }
-
+  // local component state
   state = {
     hits: [],
   };
@@ -28,7 +20,7 @@ class HackerNews extends Component {
   }
 
   render() {
-    const { hits } = this.state; // destructuring to get a var from state inside your render
+    const { hits } = this.state; // destructuring
 
     return (
       <ul className="left">
