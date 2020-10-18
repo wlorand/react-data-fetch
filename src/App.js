@@ -6,8 +6,9 @@ import './app.css';
 // image
 import logo from './logo.svg';
 
-// import local components
-import HackerNews from './components/HackerNews';
+// child components
+// import HackerNews from './components/HackerNews';
+import FetchNews from './components/FetchNews';
 
 class App extends Component {
   render() {
@@ -17,7 +18,8 @@ class App extends Component {
           <img src={logo} className="app-logo" alt="logo" />
           <h1 className="app-title">Fetch Hacker News App</h1>
         </header>
-        <HackerNews />
+        {/* <HackerNews /> */}
+        <FetchNews />
       </div>
     );
   }

@@ -20,12 +20,13 @@ class HackerNews extends Component {
   }
 
   render() {
-    const { hits } = this.state; // destructuring
+    const { hits } = this.state; // destructuring from state
 
     return (
       <ul className="left">
         {hits.map((hit) => (
           <li key={hit.objectID}>
+            hey...
             <a href={hit.url} target="_blank">
               {hit.title}
             </a>

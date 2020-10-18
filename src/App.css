@@ -31,7 +31,12 @@
   }
 }
 
-/* TODO: make this a styled component easy example */
+/* TODO: make this a styled component with this easy example */
 .left {
+  text-align: left;
+}
+
+.news-list {
+  list-style-type: none;
   text-align: left;
 }
