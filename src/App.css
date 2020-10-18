@@ -40,3 +40,7 @@
   list-style-type: none;
   text-align: left;
 }
+
+.news-item {
+  margin-bottom: 10px;
+}
