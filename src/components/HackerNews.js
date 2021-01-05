@@ -6,7 +6,7 @@ const DEFAULT_QUERY = 'd3';
 
 // class-based component
 class HackerNews extends Component {
-  // local component state
+  // initial state
   state = {
     hits: [],
   };

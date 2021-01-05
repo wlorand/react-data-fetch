@@ -7,21 +7,21 @@ import axios from 'axios';
 const HACKER_NEWS_D3 = 'https://hn.algolia.com/api/v1/search?query=d3';
 
 function FetchNews() {
-  // initial state
+  // initial state -- TODO: change to useState
   const initialState = {
     hits: [],
   };
 
   const [data, setData] = useState(initialState);
 
-  // 1- fetch data with axios and useEffect
+  // 1- fetch data with axios and useEffect and useState hooks
   useEffect(() => {
     const fetchData = async (query) => {
       const result = await axios(query);
       setData(result.data);
     };
     fetchData(HACKER_NEWS_D3);
-  }, []); // just for initial render
+  }, []); // just for initial render - no watchlist
 
   return (
     <ul className="news-list">
